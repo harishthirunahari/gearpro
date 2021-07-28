@@ -15,15 +15,15 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <div class="navbar-nav">
-      <a href="#" class="nav-item nav-link active">Home</a>
-      <a href="#Products" class="nav-item nav-link">Products</a>
-      <a href="#Services" class="nav-item nav-link">Services</a>
-      <a href="#ContactUs" class="nav-item nav-link">Contact</a>
+      <a #elemHome href="#Home" class="nav-item nav-link active" (click)="changeActiveLink('Home')">Home</a>
+      <a #elemProducts href="#Products" class="nav-item nav-link" (click)="changeActiveLink('Products')">Products</a>
+      <a #elemServices href="#Services" class="nav-item nav-link" (click)="changeActiveLink('Services')">Services</a>
+      <a #elemContactUs href="#ContactUs" class="nav-item nav-link" (click)="changeActiveLink('Contact')">Contact</a>
     </div>
   </div>
 </nav>
 
-<div
+<div id="Home"
   class=""
   style="
     background: #273da0;
@@ -169,7 +169,7 @@
   </div>
 </div>
 
-<div
+<div id="Products"
   class="div-general-header"
   style="
     background-image: url(./assets/images/products.jpg);
@@ -256,7 +256,7 @@
   </div>
 </div>
 
-<div
+<div id="Services"
   class="div-general-header"
   style="
     background-image: url(./assets/images/services1.jpg);
@@ -368,7 +368,7 @@
   </div>
 </div>
 
-<div class="div-general-header">
+<div id="ContactUs" class="div-general-header">
   <p style="font-size: 4em; font-weight: 100">Get in touch</p>
   <br />
   <p style="font-size: 1.5em !important; font-weight: 100">
@@ -408,9 +408,9 @@
       <h2 class="div-general-h2">Direct Contact</h2>
       <p class="div-general-p">
         <i class="fa fa-id-card fa-1x" style="color: darkgrey !important"></i>
-        V Madhav Rao<br />
+        Ramesh P V, V Madhav Rao<br />
         <i class="fa fa-phone fa-1x" style="color: darkgrey !important"></i>
-        +91 9885857580<br />
+        +91 9585752053, +91 9885857580<br />
         <i class="fa fa-envelope fa-1x" style="color: darkgrey !important"></i>
         <a href="mailto:madhav.vm@gmail.com">madhav.vm@gmail.com</a> |
         <a href="mailto:mesh17@rediffmail.com">mesh17@rediffmail.com</a>
@@ -496,13 +496,13 @@
       </p>
     </div>
     <div class="col-md-4 footernavbar">
-      <a href="#" style="color: white !important; font-size: 15px">Home</a>
+      <a href="#Home" style="color: white !important; font-size: 15px">Home</a>
       &nbsp;
-      <a href="#" style="color: white !important; font-size: 15px">Products</a>
+      <a href="#Products" style="color: white !important; font-size: 15px">Products</a>
       &nbsp;
-      <a href="#" style="color: white !important; font-size: 15px">Services</a>
+      <a href="#Services" style="color: white !important; font-size: 15px">Services</a>
       &nbsp;
-      <a href="#" style="color: white !important; font-size: 15px">Contact</a>
+      <a href="#Contact" style="color: white !important; font-size: 15px">Contact</a>
     </div>
     <div class="col-md-4">
       <i class="fa fa-facebook fa-2x"></i>
